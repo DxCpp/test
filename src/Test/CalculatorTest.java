@@ -1,7 +1,6 @@
 package Test;
 
 import Java.Calculator;
-import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -10,10 +9,9 @@ class CalculatorTest {
 
     @Test
     void sumFloats() {
-        float num1=2;
-        float num2=2;
-        float sum = calculator.sum(num1, num2);
-
+        float sum = calculator.sum(3f, 1f);
         Assertions.assertEquals(4f,sum);
+        sum = calculator.sum(4f, 7f);
+        Assertions.assertEquals(11f,sum);
     }
 }
